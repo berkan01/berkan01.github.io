@@ -1,1 +1,31 @@
-
+ table, th, td {
+          border: 3px solid;
+          border-collapse: collapse;
+          margin: auto;
+          text-align: center;
+           }
+      .break {
+        background-color: #6F3397;
+      }
+      .spanish{
+        background-color: #CC0052;
+      }
+      .history{
+        background-color: #336CA5;
+      }
+      .work{
+        background-color: #008F6B;
+      }
+      .computer{
+        background-color: #E68A2E;
+      }
+      .misc{
+        background-color: #FFFF66;
+      }
+      caption{
+        border-style: dotted;
+        border-width: 3px;
+        border-color: #403A4C;
+        padding: 10px;
+        font-size: 16pt;
+      }
