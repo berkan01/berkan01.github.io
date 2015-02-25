@@ -1,6 +1,6 @@
  table, th, td {
           border: 3px solid;
-          //border-collapse: collapse;
+          border-collapse: collapse;
           margin: auto;
           text-align: center;
            }
@@ -21,6 +21,9 @@
       }
       .misc{
         background-color: #FFFF66;
+      }
+      th, .time{
+       background-color: #CC0099;
       }
       caption{
         border-style: dotted;
