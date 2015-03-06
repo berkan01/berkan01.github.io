@@ -14,7 +14,13 @@
     
         <script>
             calculate = function() {
+                box1 = document.querySelector ("#box1");
+                box2 = document.querySelector ("#box2");
                 
+                height = box1.value;
+                weight = box2.value;
+                
+                solution.innerHTML = (weight * 703)/(height * height);
             }    
 
             
