@@ -5,8 +5,20 @@
   
   <body>
     <h1>Temperature Converter</h1>
-
-
+    <label for = "thebox">Temperature Celsius</label>
+    <input type = "text" id = "thebox">
+    <button onclick = "convert();">Convert to Farenheit</button>
+    <p id = "solution"></p>
+  
+  <script>
+    convert = function() {
+      thebox = document.querySelector("#thebox");
+      converter = thebox.value;
+      thebox.innerHTML = converter * 1.8 + 32;
+      
+    }
+    
+  </script>
   </body>
 
 </html>
