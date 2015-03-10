@@ -12,7 +12,7 @@
 
         <p id="height">Height: 42</p>
         <p id="weight">Weight: 225</p>
-        <p id = "solution"></p>
+        <p id = "solution">BMI: </p>
     
         <script>
             calculate = function() {
@@ -25,7 +25,7 @@
                 height = hslider.value
                 weight = wslider.value
                 
-                solution.innerHTML = (weight * 703)/(height * height);                
+                solution.innerHTML = "BMI: " + (weight * 703)/(height * height);                
                 height.innerHTML = "Height: " + height;
                 weight.innerHTML = "Weight: " + weight;
 
