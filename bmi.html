@@ -18,13 +18,16 @@
             calculate = function() {
                 hslider = document.querySelector ("#hslider");
                 wslider = document.querySelector ("#wslider");
+                height = document.querySelector ("#height").value;
+                weight = document.querySelector ("#weight").value;
                 
                 height = hslider.value;
                 weight = wslider.value;
                 
-                height.innerHTML = hslider.value;
-                weight.innterHTML = wslider.value;
-                solution.innerHTML = (weight * 703)/(height * height);
+                solution.innerHTML = (weight * 703)/(height * height);                
+                height.innerHTML = "Height: " + height;
+                weight.innerHTML = "Weight: " + weight;
+
             }    
 
             
