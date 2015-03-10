@@ -5,21 +5,25 @@
     <body>
         
         <h1>BMI Calculator</h1>
-            <label for = "box1"> Height (inches) </label>
-            <input type = "text" id = "box1">
-            <label for = "box2"> Weight (pounds) </label>
-            <input type = "text" id = "box2">
-            <button onclick = "calculate();"> Calculate </button>
+            <label for = "hslider"> Height (inches) </label>
+            <input type = "range" id = "hslider" max=96 min=12 value=42 onmousemove="calculate();">
+            <label for = "wslider"> Weight (pounds) </label>
+            <input type = "range" id = "wslider" max=500 min=50 value=225 onmousemove="calculate();">
+            //<button onclick = "calculate();"> Calculate </button>
+        <p id="height"></p>
+        <p id="weight"></p>
         <p id = "solution"></p>
     
         <script>
             calculate = function() {
-                box1 = document.querySelector ("#box1");
-                box2 = document.querySelector ("#box2");
+                hslider = document.querySelector ("#hslider");
+                wslider = document.querySelector ("#wslider");
                 
-                height = box1.value;
-                weight = box2.value;
+                height = hslider.value;
+                weight = wslider.value;
                 
+                height.innerHTML = hslider.value;
+                weight.innterHTML = wslider.value;
                 solution.innerHTML = (weight * 703)/(height * height);
             }    
 
