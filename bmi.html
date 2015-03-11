@@ -19,22 +19,17 @@
                 hslider = document.querySelector ("#hslider");
                 wslider = document.querySelector ("#wslider");
                 
-                height = document.querySelector ("#height");
-                weight = document.querySelector ("#weight");
+                heightp = document.querySelector ("#height");
+                weightp = document.querySelector ("#weight");
                 
                 height = hslider.value;
                 weight = wslider.value;
-                height.innerHTML = "Height: " + height;
-                weight.innerHTML = "Weight: " + weight;
+                heightp.innerHTML = "Height: " + height;
+                weightp.innerHTML = "Weight: " + weight;
                 
                 solution.innerHTML = "BMI: " + (weight * 703)/(height * height);                
-
-
             }    
-
             window.onload = calculate;
-            
-            
         </script>    
         
     </body>
