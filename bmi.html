@@ -13,6 +13,7 @@
         <p id = "height"></p>
         <p id = "weight"></p>
         <p id = "solution"></p>
+        <p id = "message"></p>
     
         <script>
             calculate = function() {
@@ -27,7 +28,22 @@
                 heightp.innerHTML = "Height: " + height;
                 weightp.innerHTML = "Weight: " + weight;
                 
-                solution.innerHTML = "BMI: " + (weight * 703)/(height * height);                
+                solution.innerHTML = "BMI: " + (weight * 703)/(height * height); 
+                
+                solution = document.querySelector ("#solution");
+                
+                if (solution>24){
+                    message = document.querySelector("#message");
+                    message.innerHTML = "Too High";
+                }
+                if (solution<19){
+                    message = document.querySelector("#message");
+                    message.innerHTML = "Too Low";
+                }
+                if (solution<=24 && >=19){
+                    message = document.querySelector("#message");
+                    message.innterHTML = "OK";
+                }
             }    
             window.onload = calculate;
         </script>    
