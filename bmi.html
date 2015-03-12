@@ -10,8 +10,8 @@
             <label for = "wslider"> Weight (pounds) </label>
             <input type = "range" id = "wslider" max=500 min=50 value=225 onmousemove="calculate();">
 
-        <p id = "height">Height: 42</p>
-        <p id = "weight">Weight: 225</p>
+        <p id = "height"></p>
+        <p id = "weight"></p>
         <p id = "solution"></p>
         <p id = "message"></p>
     
@@ -30,19 +30,6 @@
                 
                 solution.innerHTML = "BMI: " + (weight * 703)/(height * height); 
                 
-                if (solution>24){
-                    message = document.querySelector("#message");
-                    message.innerHTML = "Too High";
-                }
-                if (solution<19){
-                    message = document.querySelector("#message");
-                    message.innerHTML = "Too Low";
-                }
-                if (solution<=24 && >=19){
-                    message = document.querySelector("#message");
-                    message.innterHTML = "OK";
-                }
-
 
             }    
             window.onload = calculate;
