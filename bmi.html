@@ -28,11 +28,23 @@
                 heightp.innerHTML = "Height: " + height;
                 weightp.innerHTML = "Weight: " + weight;
                 
-                solution.innerHTML = "BMI: " + (weight * 703)/(height * height); 
+                f = (weight * 703)/(height * height);
+                solution.innerHTML = "BMI: " + f; 
                 
-                if (solution.value>24){
+                if (f>24){
                     message = document.querySelector("#message");
                     message.innerHTML = "Too High";
+                    document.body.style.backgroundColor = "red";
+                }
+                if (f<19){
+                    message = document.querySelector("#message");
+                    message.innerHTML = "Too Low";
+                    document.body.style.backgroundColor = "green";
+                }
+                if (f>=19 && f<=24){
+                    message = document.querySelector("#message");
+                    message.innerHTML = "OK";
+                    document.body.style.backgroundColor = "blue"
                 }
 
             }    
