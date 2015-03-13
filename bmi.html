@@ -30,8 +30,7 @@
                 
                 solution.innerHTML = "BMI: " + (weight * 703)/(height * height); 
                 
-                solution1 = document.querySelector ("#solution").value;
-                if (solution1>24){
+                if (solution.innerHTML>24){
                     message = document.querySelector("#message");
                     message.innerHTML = "Too High";
                 }
