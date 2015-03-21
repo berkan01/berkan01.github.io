@@ -4,15 +4,15 @@
     </head>
     <body>
         <label for="fnbox">First Name</label>
-        <input type="text" id="fnbox">
+        <input type="text" id="fnbox"><br>
         <label for="lnbox">Last Name</label>
-        <input type="text" id="lnbox"> 
+        <input type="text" id="lnbox"> <br>
         <label for="emailbox">Email Address</label>
-        <input type="text" id="emailbox">
+        <input type="text" id="emailbox"><br>
         <label for="phonebox">Phone Number</label>
         <input type="text" id="phonebox">
         
-        <button onclick="function();">Enter</button>
+        <button onclick="create();">Enter</button>
         
         <h1>Address Book</h1>
         <table border=1px>
@@ -24,6 +24,20 @@
                 <th>Phone Number</th>
             </tr>
         </table>
-
+    
+        <script>
+            create=function(){
+                fnbox=document.querySelector("fnbox");
+                lnbox=document.querySelector("lnbox");
+                emailbox=document.querySelector("emailbox");
+                phonebox=document.querySelector("phonebox");
+                
+                firstname= fnbox.value;
+                finalfn= document.createElement("td");
+                finalfn.innerHTML =  firstname;
+                fnbox.appendChild(finalfn);
+            }
+        </script>    
+    
     </body>
 </html>
