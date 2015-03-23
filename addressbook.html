@@ -26,27 +26,22 @@
                 
                 fncontent=fnbox.value;
                 table=document.querySelector("table");
-                trfn= document.createElement("tr");
+                newrow= document.createElement("tr");
                 tdfn= document.createElement("td");
                 
-                tdfn.appendChild(fncontent);
-                trfn.appendChild(tdfn);
-                table.appendChild(trfn);
+                newrow.appendChild(tdfn);
+                table.appendChild(newrow);
                 
-                
-                trln= document.createElement("tr");
                 tdln= document.createElement("td");
                 
                 trln.appendChild(tdln);
                 table.appendChild(trln);
                 
-                tre= document.createElement("tr");
                 tde= document.createElement("td");
                 
                 tre.appendChild(tde);
                 table.appendChild(tre);
                 
-                trp= document.createElement("tr");
                 tdp= document.createElement("td");
                 
                 trp.appendChild(tdp);
