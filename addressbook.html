@@ -24,11 +24,12 @@
                 ebox=document.querySelector("emailbox");
                 pbox=document.querySelector("phonebox");
                 
-                
+                fncontent=fnbox.value;
                 table=document.querySelector("table");
                 trfn= document.createElement("tr");
                 tdfn= document.createElement("td");
                 
+                tdfn.appendChild(fncontent);
                 trfn.appendChild(tdfn);
                 table.appendChild(trfn);
                 
