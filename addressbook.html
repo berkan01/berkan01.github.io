@@ -15,7 +15,7 @@
         <button onclick="create();">Enter</button>
         
         <h1>Address Book</h1>
-        <table border=1px><caption>Address Book</caption><tr><th>First Name</th><th>Last Name</th><th>Email Address</th><th>Phone Number</th></tr></table>
+        <table id="table" border=1px><caption>Address Book</caption><tr><th>First Name</th><th>Last Name</th><th>Email Address</th><th>Phone Number</th></tr></table>
     
         <script>
             create=function(){
@@ -24,10 +24,16 @@
                 emailbox=document.querySelector("emailbox");
                 phonebox=document.querySelector("phonebox");
                 
-                firstname= fnbox.value;
-                finalfn= document.createElement("td");
-                finalfn.innerHTML =  firstname;
-                fnbox.appendChild(finalfn);
+                fn=fnbox.value;
+                table=document.querySelector("table");
+                trfn= document.createElement("tr");
+                tdfn= document.createElement("td");
+                tdfn.appendChild(fn);
+                trfn.appendChild(tdfn);
+                table.appendChild(trfn);
+                
+                
+                
             }
         </script>    
     
