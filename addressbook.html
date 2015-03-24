@@ -7,6 +7,8 @@
                 display: block;
                 border: 10px solid #33ADFF;
                 padding: 5px;
+                height: 250px;
+                width: 85px;
             }
             h1{
                 font: georgia;
@@ -19,6 +21,7 @@
         </style>
     </head>
     <body>
+        <h1>Address Book</h1>
     <section>
         <label for="fnbox">First Name</label>
         <input type="text" id="fnbox">
@@ -32,7 +35,7 @@
         <button onclick="create();">Enter</button>
     </section>
         
-        <h1>Address Book</h1>
+        
         <table id="table" border=1px><caption>Address Book</caption><tr><th>First Name</th><th>Last Name</th><th>Email Address</th><th>Phone Number</th></tr></table>
     
         <script>
