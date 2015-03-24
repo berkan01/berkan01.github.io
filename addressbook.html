@@ -19,15 +19,15 @@
     
         <script>
             create=function(){
-                fnbox=document.querySelector("fnbox");
-                lnbox=document.querySelector("lnbox");
-                ebox=document.querySelector("emailbox");
-                pbox=document.querySelector("phonebox");
+                fnbox=document.querySelector("#fnbox").value;
+                lnbox=document.querySelector("#lnbox").value;
+                ebox=document.querySelector("#emailbox").value;
+                pbox=document.querySelector("#phonebox").value;
                 
-                fncontent=fnbox.value;
                 table=document.querySelector("table");
                 newrow= document.createElement("tr");
                 tdfn= document.createElement("td");
+                
                 
                 newrow.appendChild(tdfn);
                 table.appendChild(newrow);
