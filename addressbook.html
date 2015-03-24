@@ -26,26 +26,24 @@
                 
                 table=document.querySelector("table");
                 newrow= document.createElement("tr");
-                tdfn= document.createElement("td");
                 
+                tdfn= document.createElement("td");
                 tdfn.innerHTML=fnbox;
                 newrow.appendChild(tdfn);
-                table.appendChild(newrow);
                 
                 tdln= document.createElement("td");
-                
                 tdln.innerHTML=lnbox;
+                newrow.appendChild(tdln);
                 
                 tde= document.createElement("td");
-                
                 tde.innerHTML=ebox;
+                newrow.appendChild(tde);
                 
                 tdp= document.createElement("td");
-                
                 tdp.innerHTML=pbox;
+                newrow.appendChild(tdp);
                 
-                
-                
+                table.appendChild(newrow);
             }
         </script>    
     
