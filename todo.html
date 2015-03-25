@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>To-do List</title>
+        <title>To-Do List</title>
         <style>
             li{
                 list-style-type: none;
@@ -17,11 +17,33 @@
             .Low{
                 color: #19D175;
             }
-            
+           h1, p, label, ul{
+               font-family: "lucida grande";
+           } 
+           h1{
+               border: solid 10px #33ADFF;
+               background: #ECECEC;
+               padding: 5px;
+               width: 400px;
+               text-align: center;
+               font-size: 45pt;
+           }
+           section{
+               border: solid #33ADFF 5px;
+               padding: 5px;
+               font-size: 25pt;
+           }
+           ul{
+               border: solid #33ADFF 5px;
+               overflow: auto;
+               width: 300px;
+               padding: 5px;
+           }
         </style>
     </head>
     <body>
         <h1>To-Do List</h1>
+    <section>   
         <label for="item">To-Do</label> 
         <input type="text" id="item">
         <p>Add a priority level!</p>
@@ -32,7 +54,7 @@
         <option>Low</option>
     </select>
         <button onclick="add();">Add to list</button>
-
+    </section> 
         <ul id="list"></ul>
         
         <button onclick="clearlist();">Clear</button>
