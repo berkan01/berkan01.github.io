@@ -24,6 +24,7 @@
         <script>
             add=function(){
                 item=document.querySelector("#item").value;
+                document.querySelector("#item").value="";
                 list=document.querySelector("#list");
                 
                 newli=document.createElement("li");
@@ -42,7 +43,7 @@
                 else
                     this.parentNode.classList.remove("makered");
              }
-            clearlist=function(){ alert("hello");
+            clearlist=function(){ 
                thelist=document.querySelector("#list");
                thelist.innerHTML="";
            } 
