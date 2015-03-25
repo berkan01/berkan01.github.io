@@ -19,7 +19,7 @@
 
         <ul id="list"></ul>
         
-         <p><button onclick="clear();">Clear</button></p>
+        <button onclick="clear();">Clear</button>
         
         <script>
             add=function(){
@@ -43,8 +43,8 @@
                     this.parentNode.classList.remove("makered");
              }
             clear=function(){
-               clearlist=document.querySelector("#list");
-               clearlist.innerHTML="";
+               thelist=document.querySelector("#list");
+               thelist.innerHTML="";
            } 
         </script>
         
