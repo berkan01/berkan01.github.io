@@ -43,7 +43,14 @@
             
         </script>
         
-        <p><button>Clear</button></p>
+        <p><button onclick="clear();">Clear</button></p>
+        
+        <script>
+           clear=function(){
+               clearlist=document.querySelector("#list");
+               clearlist.innerHTML="";
+           } 
+        </script>
     </body>
 </html>
 
