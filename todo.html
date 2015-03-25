@@ -16,7 +16,7 @@
         <label for="item">To-Do</label> 
         <input type="text" id="item">
         <button onclick="add();">Add to list</button>
-        <p><button onclick="Clear();">Clear</button></p>
+
         <ul id="list"></ul>
         
         <script>
@@ -40,18 +40,10 @@
                 else
                     this.parentNode.classList.remove("makered");
              }
-             clear=function(){
-                 list=document.querySelector("#list");
-                 list.innerHTML="";
-             }
-             
-            
-            
-            
-            
             
         </script>
-
+        
+        <p><button>Clear</button></p>
     </body>
 </html>
 
