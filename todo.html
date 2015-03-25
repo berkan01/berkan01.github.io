@@ -1,6 +1,11 @@
 <html>
     <head>
         <title>To-do List</title>
+        <style>
+            li{
+                list-style-type: none;
+            }
+        </style>
     </head>
     <body>
         <h1>To-Do List</h1>
@@ -14,9 +19,14 @@
             add=function(){
                 item=document.querySelector("#item").value;
                 list=document.querySelector("#list");
+                
                 newli=document.createElement("li");
                 newli.innerHTML=item;
                 list.appendChild(newli);
+                
+                cb = document.createElement("input");
+                cb.type="checkbox";
+                newli.appendChild(cb);
                 
             }
             
